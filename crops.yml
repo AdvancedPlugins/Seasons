@@ -1,0 +1,18 @@
+# Is custom crops handling enabled?
+enabled: true
+
+# Crop growth multiplier
+growth:
+  SPRING: 1.4
+  SUMMER: 2.0
+  FALL: 1.0
+  WINTER: 1.0
+
+winterGrowth:
+  # Should crops only grow in winter if they are lit up and in positive temperature, as well as under a block?
+  # If set to false, crops will bypass the checks and use value set from growth setting for winter.
+  # If set to true, if crop doesn't pass the checks it will not grow.
+  basedOnConditions: true
+  # Temperature needed for crops to grow in winter
+  tempThreshold: 10
+

@@ -1,0 +1,11 @@
+chanceOfPrecipitation:
+  # Spring often sees consistent rainfall to support the growth of new plants.
+  SPRING: 60
+  # Summer, especially in temperate climates, can have drier periods.
+  SUMMER: 10
+  # Fall is a transitional period with varying rainfall.
+  FALL: 50
+  # Winter in cold areas is characterized by frequent snowfalls.
+  # Precipitation, depending on configuration, comes in the form of snow rather than rain.
+  WINTER: 80
+

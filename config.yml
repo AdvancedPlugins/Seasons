@@ -1,0 +1,36 @@
+# AdvancedEnchantments
+# Made by AdvancedPlugins.net
+# Config Version: 1.0.0
+# Version Release date: 17/12/2023
+
+# Homepage: https://advancedplugins.net/item/AdvancedSeasons.185/
+# Spigot: https://www.spigotmc.org/resources/advancedseasons.185/
+# Wiki: https://seasons.advancedplugins.net/
+
+# Change default messages language. You can modify all messages in AdvancedSeasons `lang` folder.
+locale: en
+
+# Should temperature be converted to Fahrenheit?
+# If true, temperature will be displayed in Fahrenheit, but all calculations will be done in Celsius
+# If false, temperature will be displayed in Celsius, and all calculations will be done in Celsius
+convertToFahrenheit: false
+
+# World List.
+# List of worlds where AdvancedSeasons should be enabled
+# You can add worlds in-game using '/as addworld <world name>' command
+worlds:
+- world
+
+# Should temperature effects be given to creative players?
+creativeTemperatureEffects: false
+
+# Should land protection plugins be ignored?
+# If true, AdvancedSeasons will ignore land protection plugins and will be able to change blocks in protected areas
+# This may have impact on performance depending on land protection plugins
+ignoreLandProtection: false
+
+# Block processing around player
+# Default is 7 chunks, which means 7x7 chunks around player will be checked for snow/grass etc.
+# We recommend leaving the setting as default. For performance issues, you can lower the value. Increasing it may
+# cause more strain on the server, however it is very optimized, uses async and multithreading, so it's able to handle more.
+chunkRadius: 7

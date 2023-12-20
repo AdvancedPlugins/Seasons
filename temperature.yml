@@ -1,0 +1,39 @@
+# Temperature configuration, in Celsius
+# Player's temperature depends on base environment temperature, biome temperature, season, light level at location and
+# number of armor items player is wearing. All of this is fully configurable below.
+
+# Per-biome temperature is configurable in `biomeConfiguration` folder files
+base: 18
+
+# Temperature Formula
+# %base% = base temperature (see setting above)
+# %biome% = relative biome temperature based
+# %seasonTemp% = season temperature (see settings below)
+# %lightLevel% = light level at that location (can be increased by e.g. torches, lava etc), range: 0-15
+# %armorItemsCount% = how many armor items player has equipped
+# %conditionalTemp% = based on conditions (e.g. player is in shade; night; raining; in water etc.)
+temperatureFormula: "%base% + %biome% + %seasonTemp% + (%lightLevel%) + (%armorItemsCount% *2) + %conditionalTemp%"
+
+# Relative to base, higher or lower +/- celcius
+temperature:
+  SPRING: 2
+  SUMMER: 7
+  FALL: -2
+  WINTER: -25
+
+# Custom biomes without winter
+# These biomes will calculate "winter" season temperature with formula: (fall+spring)/2
+noWinterBiomes:
+  - 'badlands_deserts'
+  - 'savannas_hills'
+  - 'jungles'
+
+# Configurable temperature events
+temperatureEvents:
+  freeze: -30
+  ice_forming: -25
+  shivering: -15
+  breath_visibility: -4
+  warmth: 20
+  sweating: 35
+  heatstroke: 45
