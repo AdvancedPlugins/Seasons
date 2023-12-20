@@ -1,0 +1,55 @@
+# Configuration for Swamps & Mangroves biomes
+# List of biomes: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Biome.html
+
+# Color Guide:
+# - sky: Color of the sky during the day.
+# - water: Color of the water in lakes, rivers, and oceans.
+# - waterFog: Color of the fog effect when submerged in water.
+# - grass: Color of the grass blocks.
+# - tree: Color of the tree leaves.
+# - fog: Color of the atmospheric fog.
+#
+# Note: Colors are in HEX format. You can use color picker tools online to choose your desired colors.
+
+biomes:
+  - SWAMP
+  - MANGROVE_SWAMP
+
+temperature: -0.5
+seasons:
+  spring:
+    snow: false
+    sky: "42c6d2"
+    fog: "83c9de"
+    water: "556B2F"
+    waterFog: "556B2F"
+    grass: "228B22"
+    tree: "2E8B57"
+
+  summer:
+    snow: false
+    sky: "1E90FF"
+    fog: "ADD8E6"
+    water: "556B2F"
+    waterFog: "556B2F"
+    grass: "556b2f"
+    tree: "1c731c"
+
+  fall:
+    snow: false
+    sky: "81b6dd"
+    fog: "b2babc"
+    water: "556B2F"
+    waterFog: "556B2F"
+    grass: "8FBC8F"
+    tree: "8B4513"
+
+  winter:
+    winter-freeze: false
+    snow: false
+    sky: "B0C4DE"
+    fog: "F8F8FF"
+    water: "556B2F"
+    waterFog: "556B2F"
+    grass: "556b2f"
+    tree: "2E8B57"

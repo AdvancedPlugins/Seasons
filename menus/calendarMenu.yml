@@ -1,0 +1,89 @@
+name: "&e&lSeasons Calendar"
+size: 36
+
+settings:
+  eventFormat:
+    none: " &7No Events"
+    event: " &8- &a%event name%! &7(%time% Time)"
+  # Slots in inventory where season days will be displayed
+  seasonSlots: 4,5,6,7,8,13,14,15,16,17,22,23,24,25,26,31,32,33,34,35
+  # You can name each slot separately, starting from the first slot to the last will auto assign names
+  SPRING:
+    slots: 12,13,14
+    slotNames:
+      - 'March'
+      - 'April'
+      - 'May'
+    type: PINK_STAINED_GLASS_PANE
+    name: '&d&l%slot name% - &dSpring Day %day%'
+    lore:
+      - '&8Month of %slot name%'
+      - ''
+      - '&f%slot name%''s Events:'
+      - '%events%'
+  SUMMER:
+    slots: 15,16,17
+    slotNames:
+      - 'June'
+      - 'July'
+      - 'August'
+    type: LIME_STAINED_GLASS_PANE
+    name: '&a&l%slot name% - &aSummer Day %day%'
+    lore:
+      - '&8Month of %slot name%'
+      - ''
+      - '&f%slot name%''s Events: '
+      - '%events%'
+  FALL:
+    slots: 21,22,23
+    slotNames:
+      - 'September'
+      - 'October'
+      - 'November'
+    type: YELLOW_STAINED_GLASS_PANE
+    name: '&e&l%slot name% - &eFall Day %day%'
+    lore:
+      - '&8Month of %slot name%'
+      - ''
+      - '&f%slot name%''s Events: '
+      - '%events%'
+  WINTER:
+    slots: 24,25,26
+    slotNames:
+      - 'December'
+      - 'January'
+      - 'February'
+    type: WHITE_STAINED_GLASS_PANE
+    name: '&f&l%slot name% - Winter Day %day%'
+    lore:
+      - '&8Month of %slot name%'
+      - ''
+      - '&f%slot name%''s Events:'
+      - '%events%'
+
+items:
+  filler:
+    type: BLACK_STAINED_GLASS_PANE
+    name: ' '
+  10:
+    type: BOOK
+    name: '&aSeasons'
+    lore:
+      - '&7Depending on the current season, you will notice'
+      - '&7changes in the weather, temperature, and day length.'
+      - ''
+      - '&7- &fSeasonal Weather:'
+      - '&7Experience snow in Winter, rain in Fall,'
+      - '&7or sunny days in Summer.'
+      - '&7- &fTemperature:'
+      - '&7Seasons will affect the overall temperature,'
+      - '&7causing seasonal effects.'
+      - '&7- &fCrops:'
+      - '&7Depending on weather, temperature,'
+      - '&7and season, they grow quicker or slower.'
+      - '&7- &fDay Length:'
+      - '&7Days are longer in the Summer and shorter'
+      - '&7in the Winter, affecting mobs and crops.'
+      - '&7- &fBiome Changes:'
+      - '&7Biomes will adapt to seasons, with changes'
+      - '&7in grass color, animal behavior, and growth.'

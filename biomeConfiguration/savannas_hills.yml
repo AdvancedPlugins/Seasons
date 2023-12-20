@@ -1,0 +1,59 @@
+# Configuration for Savannas & Hills biomes
+# List of biomes: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Biome.html
+
+# Color Guide:
+# - sky: Color of the sky during the day.
+# - water: Color of the water in lakes, rivers, and oceans.
+# - waterFog: Color of the fog effect when submerged in water.
+# - grass: Color of the grass blocks.
+# - tree: Color of the tree leaves.
+# - fog: Color of the atmospheric fog.
+#
+# Note: Colors are in HEX format. You can use color picker tools online to choose your desired colors.
+
+biomes:
+  - SAVANNA
+  - SAVANNA_PLATEAU
+  - WINDSWEPT_HILLS
+  - WINDSWEPT_GRAVELLY_HILLS
+  - WINDSWEPT_SAVANNA
+
+temperature: 10
+
+seasons:
+  spring:
+    snow: false
+    sky: "186890"
+    fog: "186890"
+    water: "64c5a5"
+    waterFog: "64c5a5"
+    grass: "babc72"
+    tree: "a9cc45"
+
+  summer:
+    snow: false
+    sky: "1E90FF"
+    fog: "ADD8E6"
+    water: "64c5a5"
+    waterFog: "64c5a5"
+    grass: "babc72"
+    tree: "a9cc45"
+
+  fall:
+    snow: false
+    sky: "186890"
+    fog: "186890"
+    water: "64c5a5"
+    waterFog: "64c5a5"
+    grass: "bcad72"
+    tree: "c6d461"
+
+  winter:
+    winter-freeze: false
+    snow: false
+    sky: "186890"
+    fog: "186890"
+    water: "64c5a5"
+    waterFog: "64c5a5"
+    grass: "bcad72"
+    tree: "c6d461"

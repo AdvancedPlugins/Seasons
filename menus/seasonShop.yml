@@ -1,0 +1,197 @@
+# Seasonal items shop
+enabled: true
+
+name: "&b&lSeasons Shop"
+size: 27
+
+shopItem:
+  name: "&aPᴜʀᴄʜᴀsᴇ &f%item name%"
+  lore:
+    - '  &7Purchase this seasonal decoration'
+    - ''
+    - '  &b&lPʀɪᴄᴇ &f%price% &bᴇxᴘ'
+    - '&7(!) &lLᴇғᴛ ᴄʟɪᴄᴋ&7 to purchase'
+
+# Configure items in the shop
+defaultItems:
+  SPRING:
+    filler:
+      type: PINK_STAINED_GLASS_PANE
+      name: ' '
+  SUMMER:
+    filler:
+      type: LIME_STAINED_GLASS_PANE
+      name: ' '
+  FALL:
+    filler:
+      type: ORANGE_STAINED_GLASS_PANE
+      name: ' '
+    '0,2,4,6,8,18,20,22,24,26':
+      type: YELLOW_STAINED_GLASS_PANE
+      name: ' '
+  WINTER:
+    filler:
+      type: WHITE_STAINED_GLASS_PANE
+      name: ' '
+    '0,2,4,6,8,18,20,22,24,26':
+      type: RED_STAINED_GLASS_PANE
+      name: ' '
+
+shopItems:
+  SPRING:
+    10:
+      type: PINK_TULIP
+      name: "Blossoming Tulip"
+      amount: 1
+      price: EXP:1000
+    11:
+      type: PLAYER_HEAD
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZkODA2ZGVmZGZkZjU5YjFmMjYwOWM4ZWUzNjQ2NjZkZTY2MTI3YTYyMzQxNWI1NDMwYzkzNThjNjAxZWY3YyJ9fX0=
+      name: "Vibrant Butterfly"
+      amount: 1
+      price: EXP:1800
+    12:
+      type: GRASS_BLOCK
+      name: "Fresh Spring Grass"
+      amount: 1
+      price: EXP:1500
+    13:
+      type: PLAYER_HEAD
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzkwNzJjNzdlYzZlODgzMGU5OGI2NzUxMTgwM2NhOTM3YjVmZDJlNzE4NTQxYzUwYTAyODc5MzJiYjJhYjRkMiJ9fX0=
+      name: "Bird"
+      amount: 1
+      price: EXP:1200
+    14:
+      type: WHITE_WOOL
+      name: "Fluffy Cloud Decoration"
+      amount: 1
+      price: EXP:1200
+    15:
+      type: LILY_PAD
+      name: "Serene Water Lily"
+      amount: 1
+      price: EXP:1000
+    16:
+      type: PLAYER_HEAD
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTA0MGFiZTU4ZDhiZDczYWZmYzMwYTdkMDc1NDBhNjc0NWU5NmNjNGNjYWFiNWY3MTU0MGY0YzM2NmZkMDU1YiJ9fX0=
+      name: "Bee Hive"
+      amount: 1
+      price: EXP:1500
+  SUMMER:
+    10:
+      type: SAND
+      name: "Sunny Beach Sand"
+      amount: 1
+      price: EXP:900
+    11:
+      type: PLAYER_HEAD
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzFkNDlhNjBmNWQyOTNhMGViNzRmODA4MjU3MzQ2NDU2MjY0MGU3NDdlY2Y0Y2U4ZDc5YzQwMTg3OTljOTAyYyJ9fX0=
+      name: "Glorious Sun"
+      amount: 1
+      price: EXP:1700
+    12:
+      type: CAMPFIRE
+      name: "Summer Night Campfire"
+      amount: 1
+      price: EXP:2000
+    13:
+      type: PLAYER_HEAD
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWY3OWIyMmQyNjJkZmJjNTZmMjBmODhiOTU5MzliY2M5ZTQyZjhmZjJiOGM5NzJiNjVmMWU5YjUzNTM1NWUwNCJ9fX0=
+      name: "Cool Ice Cream"
+      amount: 1
+      price: EXP:1400
+    14:
+      type: BLUE_ICE
+      name: "Chill Ice Block"
+      amount: 1
+      price: EXP:1700
+    15:
+      type: PLAYER_HEAD
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTM0ZDhiZGU5ODU3ZDg3MmU1MjEyNGQ5OTgyMTU0Y2YzZDI4Yjc3MDJmYmFjZDE5ODMzYzUxMWZlNmMxY2RmNSJ9fX0=
+      name: "Coconut"
+      amount: 1
+      price: EXP:1500
+    16:
+      type: YELLOW_WOOL
+      name: "Summer Picnic Blanket"
+      amount: 1
+      price: EXP:1100
+  FALL:
+    10:
+      type: CARVED_PUMPKIN
+      name: "Carved Pumpkin"
+      amount: 1
+      price: EXP:800
+    11:
+      type: RED_MUSHROOM
+      name: "Autumn Mushroom"
+      amount: 1
+      price: EXP:700
+    12:
+      type: PLAYER_HEAD
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzAxMTNlNWU3ZTZkZDBlMDY3MjkxYTFiYTJiMmZjZjcxNTcyN2ZkMTRkNmUzN2Y0ZGU1MWM1ZWZjZjAyNjkxOCJ9fX0=
+      name: "Friendly Scarecrow"
+      amount: 1
+      price: EXP:1200
+    13:
+      type: VINE
+      name: "Climbing Ivy"
+      amount: 1
+      price: EXP:600
+    14:
+      type: PLAYER_HEAD
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTg3Zjc0MzcyNWQ2MjJjM2FlOWQ2YWMxM2Q4MTI3OTgwZGEzN2VlYjI0NWM2YWY0NWEzZjExNzc5MGQ4ZmRkOSJ9fX0=
+      name: "Maple Leaf"
+      amount: 1
+      price: EXP:850
+    15:
+      type: BROWN_WOOL
+      name: "Cozy Wool Blanket"
+      amount: 1
+      price: EXP:750
+    16:
+      type: PLAYER_HEAD
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGVkMWI1NDY5YTE0MGQ1MTE2MzAzYTg5NjUyZDVkNTJlYWM5YzU5ZGY1NTViYTFiMzQ5MWExMjA0YTgyMGY4NiJ9fX0=
+      name: "Basket of Apples"
+      amount: 1
+      price: EXP:900
+  WINTER:
+    10:
+      type: PLAYER_HEAD
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjJlYTQ1YWNhNDUwMjRkNDczMGM3YTA0ZmQ0N2ZlNGUzMTlmNWQzYjdlOWNlODBiMzFmZGM2NzE1MzllMWEzIn19fQ==
+      name: "Glistening Snowflake"
+      amount: 1
+      price: EXP:1000
+    11:
+      type: ICE
+      name: "Frosty Ice Block"
+      amount: 1
+      price: EXP:700
+    12:
+      type: PLAYER_HEAD
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjE1YmEzMWNkZTI2NzFiOGYxNzZkZTZhOWZmZDAwODAzNWYwNTkwZDYzZWUyNDBiZTZlODkyMWNkMjAzN2E0NSJ9fX0=
+      name: "Festive Christmas Tree"
+      amount: 1
+      price: EXP:1500
+    13:
+      type: SNOW_BLOCK
+      name: "Winter Snow Block"
+      amount: 1
+      price: EXP:600
+    14:
+      type: PLAYER_HEAD
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjhkYzNjODQ0OTFjNGZmMTAzZGU2ZWEwMTg4MGUyZDgzNDMyY2Q0ODc4Yjg0ZDZiNDMyNTNjYzUxZmQ5NzhlNyJ9fX0=
+      name: "Colorful Gift Box"
+      amount: 1
+      price: EXP:1100
+    15:
+      type: LIGHT_BLUE_WOOL
+      name: "Icy Blue Wool"
+      amount: 1
+      price: EXP:650
+    16:
+      type: PLAYER_HEAD
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGZlM2VjYmQ3YjJmNDE0Yjc3ZmRjMDUxZDE1YTFkMmY0MTU3N2M1MDhjMGNiOGNlZDFhMjQyZWYwMjhmNGMzMiJ9fX0=
+      name: "Warm Hot Cocoa"
+      amount: 1
+      price: EXP:900
