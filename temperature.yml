@@ -28,12 +28,50 @@ noWinterBiomes:
   - 'savannas_hills'
   - 'jungles'
 
+# Are temperature events enabled?
+temperatureEventsEnabled: true
+
 # Configurable temperature events
+# Effects are based on Abilities - https://wiki.advancedplugins.net/abilities/introduction
+# You can pretty much use any combination of effects from here https://wiki.advancedplugins.net/abilities/effects
+# Temperature events are handled and added every 20 ticks (1 second)
 temperatureEvents:
-  freeze: -30
-  ice_forming: -25
-  shivering: -15
-  breath_visibility: -4
-  warmth: 20
-  sweating: 35
-  heatstroke: 45
+  freeze:
+    temperature: -30
+    effects:
+      - 'SCREEN_FREEZE:200'
+      - 'PLAY_SOUND:BLOCK_SNOW_PLACE:1:0.2'
+  ice_forming:
+    temperature: -25
+    effects:
+      - 'SCREEN_FREEZE:40'
+      - 'PARTICLE:SNOW_SHOVEL:4:0.5 @EyeHeight'
+      - 'PLAY_SOUND:BLOCK_POWDER_SNOW_FALL:1:0.2'
+  shivering:
+    temperature: -15
+    effects:
+      - 'POTION:SLOW:0:1'
+      - 'SCREEN_FREEZE:15'
+      - 'PLAY_SOUND:ENTITY_STRAY_AMBIENT:1:0.2'
+  breath_visibility:
+    temperature: -4
+    effects:
+      - 'PARTICLE:SNOWFLAKE:5:0 @EyeHeight'
+  warmth:
+    temperature: 20
+    effects:
+      - 'POTION:REGENERATION:4:10'
+  sweating:
+    temperature: 35
+    effects:
+      - 'POTION:CONFUSION:0:75'
+      - 'PARTICLE:WATER_SPLASH:20:0.2 @EyeHeight'
+      - 'PLAY_SOUND:BLOCK_FURNACE_FIRE_CRACKLE:1:0.2'
+  heatstroke:
+    temperature: 45
+    effects:
+      - 'BURN:2'
+      - 'POTION:CONFUSION:0:200'
+      - 'ENTITY_EFFECT:HURT_BERRY_BUSH'
+      - 'PARTICLE:SMALL_FLAME:20:0.2 @EyeHeight'
+      - 'PLAY_SOUND:BLOCK_FIRE_AMBIENT:1:0.5'
