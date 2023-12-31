@@ -1,6 +1,6 @@
 prefix: "&6AdvancedSeasons "
 temperature:
-  actionBar: '%icon% &b%temperature%°%unit%                                      '
+  actionBar: '%icon% &b%temperature%°%unit% %season%                             '
   icon:
     sun: "&6☀" # Shown during the day when sky is clear
     moon: "&7☽" # Shown at night when sky is clear
@@ -21,6 +21,12 @@ times:
   DAY: 'Noon'
   EVENING: 'Evening'
   NIGHT: 'Midnight'
+
+seasons:
+  SPRING: 'Spring'
+  SUMMER: 'Summer'
+  FALL: 'Fall'
+  WINTER: 'Winter'
 
 messages:
   notEnoughMoney: '%prefix% &cYou do not have enough EXP to purchase this item!'
