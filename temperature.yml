@@ -12,7 +12,7 @@ base: 18
 # %lightLevel% = light level at that location (can be increased by e.g. torches, lava etc), range: 0-15
 # %armorItemsCount% = how many armor items player has equipped
 # %conditionalTemp% = based on conditions (e.g. player is in shade; night; raining; in water etc.)
-temperatureFormula: "%base% + %biome% + %seasonTemp% + (%lightLevel%) + (%armorItemsCount% *2) + %conditionalTemp%"
+temperatureFormula: "%base% + %biome% + %seasonTemp% + %lightLevel% + (%armorItemsCount% *2) + %conditionalTemp%"
 
 # Relative to base, higher or lower +/- celcius
 temperature:
@@ -37,7 +37,7 @@ temperatureEventsEnabled: true
 # Temperature events are handled and added every 20 ticks (1 second)
 temperatureEvents:
   freeze:
-    temperature: -30
+    temperature: -28
     effects:
       - 'SCREEN_FREEZE:200'
       - 'PLAY_SOUND:BLOCK_SNOW_PLACE:1:0.2'
@@ -50,9 +50,7 @@ temperatureEvents:
   shivering:
     temperature: -15
     effects:
-      - 'POTION:SLOW:0:1'
-      - 'SCREEN_FREEZE:15'
-      - 'PLAY_SOUND:ENTITY_STRAY_AMBIENT:1:0.2'
+      - 'SCREEN_FREEZE:8'
   breath_visibility:
     temperature: -4
     effects:
@@ -62,16 +60,15 @@ temperatureEvents:
     effects:
       - 'POTION:REGENERATION:4:10'
   sweating:
-    temperature: 35
+    temperature: 38
     effects:
-      - 'POTION:CONFUSION:0:75'
       - 'PARTICLE:WATER_SPLASH:20:0.2 @EyeHeight'
       - 'PLAY_SOUND:BLOCK_FURNACE_FIRE_CRACKLE:1:0.2'
   heatstroke:
-    temperature: 45
+    temperature: 50
     effects:
-      - 'BURN:2'
-      - 'POTION:CONFUSION:0:200'
+      - 'BURN:1'
+      - 'POTION:CONFUSION:0:75'
       - 'ENTITY_EFFECT:HURT_BERRY_BUSH'
       - 'PARTICLE:SMALL_FLAME:20:0.2 @EyeHeight'
       - 'PLAY_SOUND:BLOCK_FIRE_AMBIENT:1:0.5'
