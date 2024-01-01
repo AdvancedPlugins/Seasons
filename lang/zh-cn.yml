@@ -1,0 +1,38 @@
+prefix: "&6高级季节 "
+temperature:
+  actionBar: '%icon% &b%temperature%°%unit% %season%                             '
+  icon:
+    sun: "&6☀" # 白天天空晴朗时显示
+    moon: "&7☽" # 夜间天空晴朗时显示
+    rain: "&3☂" # 下雨时显示
+    snow: "&b✻" # 下雪时显示
+  eventMessage: '&f你现在&r%event%!'
+  events:
+    freeze: '&f处于&5冻结&f状态'
+    ice_forming: '&f正在&b缓慢冻结'
+    shivering: '&f冷得&d发抖'
+    breath_visibility: '&f&o很冷'
+    warmth: '&e很暖和'
+    sweating: '&f正在&c出汗'
+    heatstroke: '&4中暑了'
+
+times:
+  MORNING: '早晨'
+  DAY: '中午'
+  EVENING: '傍晚'
+  NIGHT: '半夜'
+
+seasons:
+  SPRING: '春季'
+  SUMMER: '夏季'
+  FALL: '秋季'
+  WINTER: '冬季'
+
+messages:
+  notEnoughMoney: '%prefix% &c你没有足够的经验来购买该物品!'
+  purchasedItem: '%prefix% &a你已以 %price% 购买了 %item name%!'
+  biomeInfo:
+    - "%prefix% &f你目前位于:"
+    - "  &f生物群系: &b%biome%"
+    - "  &f温度: &b%temperature%°%unit%"
+    - "  &f季节: &b%season%"
