@@ -58,7 +58,7 @@ temperatureEvents:
   warmth:
     temperature: 20
     effects:
-      - 'POTION:REGENERATION:4:10'
+      - 'POTION:REGENERATION:4:10:FALSE'
   sweating:
     temperature: 38
     effects:
@@ -68,7 +68,7 @@ temperatureEvents:
     temperature: 50
     effects:
       - 'BURN:1'
-      - 'POTION:CONFUSION:0:75'
+      - 'POTION:CONFUSION:0:75:FALSE'
       - 'ENTITY_EFFECT:HURT_BERRY_BUSH'
       - 'PARTICLE:SMALL_FLAME:20:0.2 @EyeHeight'
       - 'PLAY_SOUND:BLOCK_FIRE_AMBIENT:1:0.5'

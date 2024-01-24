@@ -14,6 +14,11 @@ time:
     dayLength: 7
     nightLength: 13
 
+# Seasons Progression
+progression:
+  # Should season progression be paused? Set to true to pause
+  paused: false
+
 calendar:
   # How many days should one season last
   seasonDays: 2

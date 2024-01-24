@@ -32,7 +32,7 @@ messages:
   notEnoughMoney: '%prefix% &cYou do not have enough EXP to purchase this item!'
   purchasedItem: '%prefix% &aYou have purchased %item name% for %price%!'
   biomeInfo:
-    - "%prefix% &fYou currently are in:"
+    - "%prefix% &fYou are currently in:"
     - "  &fBiome: &b%biome%"
     - "  &fTemperature: &b%temperature%°%unit%"
     - "  &fSeason: &b%season%"
