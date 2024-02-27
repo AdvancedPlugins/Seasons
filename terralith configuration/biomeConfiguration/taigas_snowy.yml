@@ -1,0 +1,82 @@
+# Configuration for Taigas & Snowy Regions biomes
+# List of biomes: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Biome.html
+
+# Color Guide:
+# - sky: Color of the sky during the day.
+# - water: Color of the water in lakes, rivers, and oceans.
+# - waterFog: Color of the fog effect when submerged in water.
+# - grass: Color of the grass blocks.
+# - tree: Color of the tree leaves.
+# - fog: Color of the atmospheric fog.
+#
+# Note: Colors are in HEX format. You can use color picker tools online to choose your desired colors.
+
+biomes:
+  - ICE_SPIKES
+  - SNOWY_PLAINS
+  - SNOWY_SLOPES
+  - SNOWY_TAIGA
+  - TAIGA
+  - OLD_GROWTH_PINE_TAIGA
+  - OLD_GROWTH_SPRUCE_TAIGA
+  - FROZEN_PEAKS
+  - FROZEN_RIVER
+  - JAGGED_PEAKS
+  - STONY_PEAKS
+  - alpine_highlands
+  - amethyst_canyon
+  - basalt_cliffs
+  - frozen_cliffs
+  - glacial_chasm
+  - granite_cliffs
+  - ice_marsh
+  - rocky_mountains
+  - siberian_grove
+  - siberian_taiga
+  - snowy_cherry_grove
+  - snowy_maple_forest
+  - snowy_shield
+  - white_cliffs
+temperature: -10
+
+seasons:
+  spring:
+    # If snow is true, rain will be replaced by snow
+    snow: true
+    sky: "42c6d2"
+    fog: "83c9de"
+    water: "09a8cd"
+    waterFog: "09a8cd"
+    grass: "8FBC8F"
+    tree: "2E8B57"
+
+  summer:
+    # If snow is true, rain will be replaced by snow
+    snow: true
+    sky: "1E90FF"
+    fog: "ADD8E6"
+    water: "6dd8db"
+    waterFog: "6dd8db"  
+    grass: "16a616"
+    tree: "228B22"
+
+  fall:
+    # If snow is true, rain will be replaced by snow
+    snow: true
+    sky: "81b6dd"
+    fog: "b2babc"
+    water: "4682B4"
+    waterFog: "B0C4DE"
+    grass: "DCDCDC"
+    tree: "A9A9A9"
+
+  winter:
+    winter-freeze: true
+    # If snow is true, rain will be replaced by snow
+    snow: true
+    sky: "B0C4DE"
+    fog: "F8F8FF"
+    water: "B0E0E6"
+    waterFog: "E0FFFF"
+    grass: "F5FFFA"
+    tree: "F0FFF0"
