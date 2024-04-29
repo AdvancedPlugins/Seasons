@@ -40,7 +40,7 @@ chunkRadius: 9
 # Default is 8, which means 8 chunks will be updated every second. This only affects surrounding area of the player.
 # 8 is a very safe value, and chunks around the player will update gradually. Having a bigger number may overload
 # the player connection, and could cause kicks or freezes. If you are experiencing any problems like those, lower the value.
-chunkUpdates: 8
+chunkUpdates: 3
 
 # Is temperature actionbar enabled?
 # If true, temperature will be displayed in actionbar
@@ -51,3 +51,8 @@ temperatureActionbar: true
 # If true, temperature events will be shown in actionbar
 temperatureEventsActionbar: true
 
+# Disable seasonal colors for certain biomes
+# Example use: If you want to keep all seasonal temperature and other effects, but to disable season colors
+# overriding default biome colors, you can add biomes here.
+defaultColorBiomes: []
+#  - 'PLAINS' # Example biome here. To enable this list, uncomment this line and remove `[]` from above
