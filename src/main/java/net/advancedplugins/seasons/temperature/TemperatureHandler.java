@@ -9,11 +9,14 @@ import org.jetbrains.annotations.NotNull;
 @NotCache
 public interface TemperatureHandler {
 
-  @NotNull TemperatureReceptorHandler<Player> players();
+  @NotNull
+  TemperatureReceptorHandler<Player> players();
 
-  @NotNull TemperatureReceptorHandler<Entity> entities();
+  @NotNull
+  TemperatureReceptorHandler<Entity> entities();
 
-  @NotNull TemperatureReceptorHandler<Block> blocks();
+  @NotNull
+  TemperatureReceptorHandler<Block> blocks();
 
   static @NotNull TemperatureHandler instance() {
     throw new UnsupportedOperationException("Unimplemented");

@@ -11,7 +11,8 @@ import java.util.Optional;
 @NotCache
 public interface BiomeHandler {
 
-  @NotNull @UnmodifiableView
+  @NotNull
+  @UnmodifiableView
   List<ArtificialBiome> loadedBiomes();
 
   default @NotNull Optional<ArtificialBiome> getBiome(@NotNull String name) {
@@ -20,7 +21,8 @@ public interface BiomeHandler {
         .findFirst();
   }
 
-  @NotNull Optional<ArtificialBiome> getBiomeAt(@NotNull Location location);
+  @NotNull
+  Optional<ArtificialBiome> getBiomeAt(@NotNull Location location);
 
   static @NotNull BiomeHandler instance() {
     throw new UnsupportedOperationException("Unimplemented");

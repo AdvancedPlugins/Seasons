@@ -20,6 +20,7 @@ public interface TemperatureReceptorHandler<T> {
 
   void registerModifier(@NotNull String key, @NotNull TemperatureModifier<T> modifier);
 
-  @Nullable TemperatureModifier<T> removeModifier(@NotNull String key);
+  @Nullable
+  TemperatureModifier<T> removeModifier(@NotNull String key);
 
 }

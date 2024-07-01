@@ -9,9 +9,11 @@ import java.util.Optional;
 @NotCache
 public interface CalendarHandler {
 
-  @NotNull Optional<WorldCalendar> calendarOf(@NotNull World world);
+  @NotNull
+  Optional<WorldCalendar> calendarOf(@NotNull World world);
 
-  @NotNull Optional<WorldCalendar> computeCalendar(@NotNull World world);
+  @NotNull
+  Optional<WorldCalendar> computeCalendar(@NotNull World world);
 
   boolean deleteCalendar(@NotNull World world);
 
