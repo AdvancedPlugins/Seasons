@@ -1,0 +1,38 @@
+events:
+  halloween:
+    name: "&6Halloween"
+    day: 8
+    time: EVENING #NIGHT, MORNING, DAY, EVENING
+    broadcast: # This broadcasts to all players in the world
+      - '&7Spooky Halloween is here! Beware of the darkness...'
+    commands:
+      - '[FOR ALL PLAYERS] give %player% pumpkin 1 name:&6Halloween_Special'
+  christmas:
+    name: "&2Christmas"
+    day: 10
+    time: MORNING #NIGHT, MORNING, DAY, EVENING
+    broadcast: # This broadcasts to all players in the world
+      - '&7Merry Christmas! The world is covered in a festive spirit.'
+    commands:
+      - '[FOR ALL PLAYERS] give %player% cookie 1 name:&2Christmas_Treat'
+      - '[FOR ALL PLAYERS] give %player% snowball 16 name:&fSnowball_Fight!'
+  new_year:
+    name: "&bNew Year"
+    day: 11
+    time: NIGHT #NIGHT, MORNING, DAY, EVENING
+    broadcast: # This broadcasts to all players in the world
+      - '&7Happy New Year! May the new adventures begin!'
+    commands:
+      - '[FOR ALL PLAYERS] give %player% firework_rocket 1 name:&bNew_Year_Celebration'
+  valentines:
+    name: "&dValentine's Day"
+    time: DAY #NIGHT, MORNING, DAY, EVENING
+    day: 12
+    broadcast: # This broadcasts to all players in the world
+      - '&7Happy Valentine’s Day! Share the love with everyone around you.'
+  easter:
+    name: "&eEaster"
+    time: MORNING #NIGHT, MORNING, DAY, EVENING
+    day: 2
+    broadcast: # This broadcasts to all players in the world
+      - '&7Happy Easter!'

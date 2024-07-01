@@ -1,0 +1,38 @@
+prefix: "&6AdvancedSeasons "
+temperature:
+  actionBar: '%icon% &b%temperature%°%unit% %season%                             '
+  icon:
+    sun: "&6☀" # Shown during the day when sky is clear
+    moon: "&7☽" # Shown at night when sky is clear
+    rain: "&3☂" # Shown when raining
+    snow: "&b✻" # Shown when snowing
+  eventMessage: '&fYou are now &r%event%!'
+  events:
+    freeze: '&5Freezing'
+    ice_forming: '&bSlowly freezing'
+    shivering: '&dShivering'
+    breath_visibility: '&f&oCold'
+    warmth: '&eWarm'
+    sweating: '&cSweating'
+    heatstroke: '&4Having a heatstroke'
+
+times:
+  MORNING: 'Morning'
+  DAY: 'Noon'
+  EVENING: 'Evening'
+  NIGHT: 'Midnight'
+
+seasons:
+  SPRING: 'Spring'
+  SUMMER: 'Summer'
+  FALL: 'Fall'
+  WINTER: 'Winter'
+
+messages:
+  notEnoughMoney: '%prefix% &cYou do not have enough EXP to purchase this item!'
+  purchasedItem: '%prefix% &aYou have purchased %item name% for %price%!'
+  biomeInfo:
+    - "%prefix% &fYou are currently in:"
+    - "  &fBiome: &b%biome%"
+    - "  &fTemperature: &b%temperature%°%unit%"
+    - "  &fSeason: &b%season%"
