@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    id("maven-publish")
 }
 
 java {
@@ -35,4 +36,14 @@ repositories {
 dependencies {
     compileOnly("org.jetbrains:annotations:24.0.0")
     compileOnly("org.spigotmc:spigot-api:1.20.1-R0.1-SNAPSHOT")
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = project.group.toString()
+            version = project.version.toString()
+            artifactId = project.name
+        }
+    }
 }
