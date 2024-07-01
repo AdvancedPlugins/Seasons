@@ -1,4 +1,4 @@
-package net.advancedplugins.seasons;
+package net.advancedplugins.seasons.api;
 
 import org.bukkit.World;
 import org.bukkit.entity.Player;

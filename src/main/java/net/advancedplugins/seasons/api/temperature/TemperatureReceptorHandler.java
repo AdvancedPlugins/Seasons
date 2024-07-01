@@ -1,6 +1,6 @@
-package net.advancedplugins.seasons.temperature;
+package net.advancedplugins.seasons.api.temperature;
 
-import net.advancedplugins.seasons.annotation.NotCache;
+import net.advancedplugins.seasons.api.annotation.NotCache;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

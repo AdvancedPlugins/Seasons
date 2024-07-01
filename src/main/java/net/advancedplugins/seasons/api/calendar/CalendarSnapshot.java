@@ -1,6 +1,6 @@
-package net.advancedplugins.seasons.calendar;
+package net.advancedplugins.seasons.api.calendar;
 
-import net.advancedplugins.seasons.season.SeasonType;
+import net.advancedplugins.seasons.api.season.SeasonType;
 import org.jetbrains.annotations.NotNull;
 
 import java.time.LocalDate;

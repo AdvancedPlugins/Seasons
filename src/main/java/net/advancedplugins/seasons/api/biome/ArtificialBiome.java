@@ -1,4 +1,4 @@
-package net.advancedplugins.seasons.biome;
+package net.advancedplugins.seasons.api.biome;
 
 import org.bukkit.NamespacedKey;
 import org.jetbrains.annotations.NotNull;

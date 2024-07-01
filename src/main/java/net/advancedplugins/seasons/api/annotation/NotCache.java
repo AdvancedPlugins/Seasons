@@ -1,4 +1,4 @@
-package net.advancedplugins.seasons.annotation;
+package net.advancedplugins.seasons.api.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

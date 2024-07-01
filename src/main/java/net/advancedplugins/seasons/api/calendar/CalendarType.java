@@ -1,4 +1,4 @@
-package net.advancedplugins.seasons.calendar;
+package net.advancedplugins.seasons.api.calendar;
 
 public enum CalendarType {
 

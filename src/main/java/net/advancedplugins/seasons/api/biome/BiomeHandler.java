@@ -1,6 +1,6 @@
-package net.advancedplugins.seasons.biome;
+package net.advancedplugins.seasons.api.biome;
 
-import net.advancedplugins.seasons.annotation.NotCache;
+import net.advancedplugins.seasons.api.annotation.NotCache;
 import org.bukkit.Location;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.UnmodifiableView;

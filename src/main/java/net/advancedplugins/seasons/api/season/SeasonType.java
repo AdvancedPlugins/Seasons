@@ -1,4 +1,4 @@
-package net.advancedplugins.seasons.season;
+package net.advancedplugins.seasons.api.season;
 
 public enum SeasonType {
 

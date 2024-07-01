@@ -1,7 +1,7 @@
-package net.advancedplugins.seasons.calendar;
+package net.advancedplugins.seasons.api.calendar;
 
-import net.advancedplugins.seasons.calendar.day.DayDuration;
-import net.advancedplugins.seasons.season.SeasonType;
+import net.advancedplugins.seasons.api.calendar.day.DayDuration;
+import net.advancedplugins.seasons.api.season.SeasonType;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.UnmodifiableView;
 

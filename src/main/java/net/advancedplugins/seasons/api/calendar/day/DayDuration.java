@@ -1,4 +1,4 @@
-package net.advancedplugins.seasons.calendar.day;
+package net.advancedplugins.seasons.api.calendar.day;
 
 import java.util.Objects;
 

@@ -1,4 +1,4 @@
-package net.advancedplugins.seasons.temperature;
+package net.advancedplugins.seasons.api.temperature;
 
 import org.jetbrains.annotations.NotNull;
 
