@@ -4,17 +4,22 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
 
-public record SeasonSnapshot(@NotNull String name, int transition) {
+public record SeasonSnapshot(@NotNull SeasonType seasonType, int phase) {
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
     SeasonSnapshot that = (SeasonSnapshot) o;
-    return transition == that.transition && Objects.equals(name, that.name);
+    return phase == that.phase && Objects.equals(seasonType, that.seasonType);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name, transition);
+    return Objects.hash(seasonType, phase);
+  }
+
+  @Override
+  public String toString() {
+    return "Season '" + seasonType + "', phase '" + phase + "'";
   }
 }
