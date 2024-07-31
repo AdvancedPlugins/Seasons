@@ -1,7 +1,7 @@
 package net.advancedplugins.seasons.api;
 
 import net.advancedplugins.seasons.api.biome.BiomeHandler;
-import net.advancedplugins.seasons.api.calendar.CalendarConfigurationHandler;
+import net.advancedplugins.seasons.api.calendar.configuration.CalendarConfigurationHandler;
 import net.advancedplugins.seasons.api.temperature.TemperatureHandler;
 import net.advancedplugins.seasons.api.world.WorldHandler;
 import org.jetbrains.annotations.NotNull;

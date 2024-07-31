@@ -1,9 +1,8 @@
-package net.advancedplugins.seasons.api.calendar;
+package net.advancedplugins.seasons.api.calendar.configuration;
 
 import com.google.common.collect.ImmutableBiMap;
 import net.advancedplugins.seasons.api.AdvancedSeasonsAssembly;
 import net.advancedplugins.seasons.api.annotation.NotCache;
-import net.advancedplugins.seasons.api.calendar.configuration.CalendarConfiguration;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Optional;
