@@ -1,33 +1,44 @@
 package net.advancedplugins.seasons.api.calendar;
 
-import net.advancedplugins.seasons.api.season.SeasonType;
+import net.advancedplugins.seasons.api.calendar.configuration.CalendarConfiguration;
+import net.advancedplugins.seasons.api.calendar.day.DayLengthData;
+import net.advancedplugins.seasons.api.calendar.year.YearExpects;
+import net.advancedplugins.seasons.api.season.SeasonSnapshot;
 import org.jetbrains.annotations.NotNull;
 
+import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.Month;
 
 public record CalendarSnapshot(
-    int currentYearTicks,
+    int yearTickCount,
+    int yearDayIndex,
     int year,
-    int daysPerYear,
-    Month currentMonth,
-    @NotNull SeasonType currentSeason,
-    @NotNull CalendarConfiguration configuration
+    @NotNull SeasonSnapshot currentSeason,
+    @NotNull CalendarConfiguration configuration,
+    @NotNull YearExpects yearExpects
 ) {
 
-  public int elapsedDays() {
-    int ticksPerDay = configuration.dayDurationInTicks();
-
-    return currentYearTicks / ticksPerDay;
-  }
-
-  public int currentDayNumber() {
-    int ticksPerDay = configuration.dayDurationInTicks();
-
-    return (int) Math.ceil((double) currentYearTicks / ticksPerDay);
+  public int yearDay() {
+    return yearDayIndex + 1;
   }
 
   public @NotNull LocalDate date() {
-    return LocalDate.ofYearDay(year, currentDayNumber());
+    if (configuration.type() != CalendarType.GREGORIAN)
+      throw new UnsupportedOperationException("Cannot create a LocalDate with CUSTOM calendars");
+
+    return LocalDate.ofYearDay(year, yearDay());
+  }
+
+  public @NotNull Month month() {
+    return date().getMonth();
+  }
+
+  public @NotNull DayOfWeek dayOfWeek() {
+    return date().getDayOfWeek();
+  }
+
+  public @NotNull DayLengthData currentDayProportions() {
+    return configuration.dayDurationBySeason().get(currentSeason.seasonType());
   }
 }
