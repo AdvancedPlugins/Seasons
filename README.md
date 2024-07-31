@@ -1,3 +1,6 @@
+# ⚠️ WARNING ⚠️
+API is still on ALPHA. It can undergo several changes anytime.
+
 # Seasons
 Experience dynamic seasons in Minecraft with Advanced Seasons, the most immersive seasons plugin available.
 
