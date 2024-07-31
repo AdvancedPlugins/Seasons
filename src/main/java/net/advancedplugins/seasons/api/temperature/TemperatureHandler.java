@@ -1,5 +1,6 @@
 package net.advancedplugins.seasons.api.temperature;
 
+import net.advancedplugins.seasons.api.AdvancedSeasonsAssembly;
 import net.advancedplugins.seasons.api.annotation.NotCache;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Entity;
@@ -19,6 +20,6 @@ public interface TemperatureHandler {
   TemperatureReceptorHandler<Block> blocks();
 
   static @NotNull TemperatureHandler instance() {
-    throw new UnsupportedOperationException("Unimplemented");
+    return AdvancedSeasonsAssembly.temperatureHandler();
   }
 }

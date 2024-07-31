@@ -1,5 +1,6 @@
 package net.advancedplugins.seasons.api.biome;
 
+import net.advancedplugins.seasons.api.AdvancedSeasonsAssembly;
 import net.advancedplugins.seasons.api.annotation.NotCache;
 import org.bukkit.Location;
 import org.jetbrains.annotations.NotNull;
@@ -25,6 +26,6 @@ public interface BiomeHandler {
   Optional<ArtificialBiome> getBiomeAt(@NotNull Location location);
 
   static @NotNull BiomeHandler instance() {
-    throw new UnsupportedOperationException("Unimplemented");
+    return AdvancedSeasonsAssembly.biomeHandler();
   }
 }
