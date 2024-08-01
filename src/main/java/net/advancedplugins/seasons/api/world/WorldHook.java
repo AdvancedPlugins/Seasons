@@ -9,9 +9,11 @@ import org.jetbrains.annotations.NotNull;
 @NotCache
 public interface WorldHook {
 
-  @NotNull World world();
+  @NotNull
+  World world();
 
-  @NotNull WorldCalendar calendar();
+  @NotNull
+  WorldCalendar calendar();
 
   boolean isPersistent();
 
@@ -20,5 +22,4 @@ public interface WorldHook {
   void setCalendarConfiguration(@NotNull CalendarConfiguration calendarConfiguration);
 
   boolean isStillLoaded();
-
 }

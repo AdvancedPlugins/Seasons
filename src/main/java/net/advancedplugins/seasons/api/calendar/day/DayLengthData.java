@@ -40,11 +40,15 @@ public class DayLengthData implements Serializable {
 
   @Override
   public String toString() {
-    return "DayLengthData{" +
-        "dayTicks=" + dayTicks +
-        ", nightTicks=" + nightTicks +
-        ", dayTimeProgressPerTick=" + dayTimeProgressPerTick +
-        ", nightTimeProgressPerTick=" + nightTimeProgressPerTick +
-        '}';
+    return "DayLengthData{"
+        + "dayTicks="
+        + dayTicks
+        + ", nightTicks="
+        + nightTicks
+        + ", dayTimeProgressPerTick="
+        + dayTimeProgressPerTick
+        + ", nightTimeProgressPerTick="
+        + nightTimeProgressPerTick
+        + '}';
   }
 }

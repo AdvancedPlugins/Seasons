@@ -1,11 +1,11 @@
 package net.advancedplugins.seasons.api.event;
 
+import static java.util.Objects.requireNonNull;
+
 import net.advancedplugins.seasons.api.calendar.WorldCalendar;
 import net.advancedplugins.seasons.api.season.SeasonSnapshot;
 import org.bukkit.event.HandlerList;
 import org.jetbrains.annotations.NotNull;
-
-import static java.util.Objects.requireNonNull;
 
 public class SeasonUpdateEvent extends AbstractCalendarEvent {
 
@@ -20,6 +20,10 @@ public class SeasonUpdateEvent extends AbstractCalendarEvent {
     this.oldState = requireNonNull(oldState, "oldState");
     this.newState = requireNonNull(newState, "newState");
     this.cause = requireNonNull(cause, "cause");
+  }
+
+  public static HandlerList getHandlerList() {
+    return HANDLER_LIST;
   }
 
   public @NotNull SeasonSnapshot oldState() {
@@ -37,10 +41,6 @@ public class SeasonUpdateEvent extends AbstractCalendarEvent {
   @NotNull
   @Override
   public HandlerList getHandlers() {
-    return HANDLER_LIST;
-  }
-
-  public static HandlerList getHandlerList() {
     return HANDLER_LIST;
   }
 }

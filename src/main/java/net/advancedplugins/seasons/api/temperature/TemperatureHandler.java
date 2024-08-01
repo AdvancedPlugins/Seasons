@@ -10,6 +10,10 @@ import org.jetbrains.annotations.NotNull;
 @NotCache
 public interface TemperatureHandler {
 
+  static @NotNull TemperatureHandler instance() {
+    return AdvancedSeasonsAssembly.temperatureHandler();
+  }
+
   @NotNull
   TemperatureReceptorHandler<Player> players();
 
@@ -18,8 +22,4 @@ public interface TemperatureHandler {
 
   @NotNull
   TemperatureReceptorHandler<Block> blocks();
-
-  static @NotNull TemperatureHandler instance() {
-    return AdvancedSeasonsAssembly.temperatureHandler();
-  }
 }

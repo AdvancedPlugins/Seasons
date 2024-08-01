@@ -22,5 +22,4 @@ public interface TemperatureReceptorHandler<T> {
 
   @Nullable
   TemperatureModifier<T> removeModifier(@NotNull String key);
-
 }

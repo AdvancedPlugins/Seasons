@@ -1,6 +1,11 @@
 package net.advancedplugins.seasons.api.calendar.year;
 
 import com.google.common.collect.ImmutableBiMap;
+import java.time.Year;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Optional;
 import net.advancedplugins.seasons.api.calendar.CalendarType;
 import net.advancedplugins.seasons.api.calendar.configuration.CalendarConfiguration;
 import net.advancedplugins.seasons.api.calendar.configuration.CustomCalendarConfiguration;
@@ -11,18 +16,12 @@ import net.advancedplugins.seasons.api.util.YearTick;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import java.time.Year;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Optional;
-
 public abstract class AbstractYearExpects<T extends CalendarConfiguration> implements YearExpects {
 
   protected final int year;
+  protected final @NotNull T configuration;
   private final @NotNull ImmutableBiMap<SeasonSnapshot, CircularIntRange> phaseRanges;
   private final @NotNull Map<SeasonSnapshot, CircularIntRange> orderedPhaseRanges = new LinkedHashMap<>();
-  protected final @NotNull T configuration;
 
   public AbstractYearExpects(@NotNull T configuration, int year) {
     this.configuration = configuration;

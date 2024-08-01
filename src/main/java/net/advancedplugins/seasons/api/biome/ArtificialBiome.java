@@ -1,11 +1,10 @@
 package net.advancedplugins.seasons.api.biome;
 
+import java.util.List;
+import java.util.Objects;
 import org.bukkit.NamespacedKey;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.UnmodifiableView;
-
-import java.util.List;
-import java.util.Objects;
 
 public record ArtificialBiome(
     @NotNull List<NamespacedKey> subBiomes,

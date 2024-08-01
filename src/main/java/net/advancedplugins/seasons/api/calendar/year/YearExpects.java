@@ -16,6 +16,6 @@ public interface YearExpects extends SeasonExpects {
 
   int durationOfSeason(@NotNull SeasonType seasonType, boolean withTransitions, boolean inTicks);
 
-  @NotNull ImmutableBiMap<SeasonSnapshot, CircularIntRange> phaseRanges();
-
+  @NotNull
+  ImmutableBiMap<SeasonSnapshot, CircularIntRange> phaseRanges();
 }

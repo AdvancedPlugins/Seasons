@@ -54,7 +54,10 @@ public record CircularIntRange(int start, int end, int smallestValue, int higher
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
     CircularIntRange circularIntRange = (CircularIntRange) o;
-    return start == circularIntRange.start && end == circularIntRange.end && higherValue == circularIntRange.higherValue && smallestValue == circularIntRange.smallestValue;
+    return start == circularIntRange.start
+        && end == circularIntRange.end
+        && higherValue == circularIntRange.higherValue
+        && smallestValue == circularIntRange.smallestValue;
   }
 
   @Override
@@ -64,11 +67,15 @@ public record CircularIntRange(int start, int end, int smallestValue, int higher
 
   @Override
   public String toString() {
-    return "IntRange{" +
-        "start=" + start +
-        ", end=" + end +
-        ", smallestValue=" + smallestValue +
-        ", higherValue=" + higherValue +
-        '}';
+    return "IntRange{"
+        + "start="
+        + start
+        + ", end="
+        + end
+        + ", smallestValue="
+        + smallestValue
+        + ", higherValue="
+        + higherValue
+        + '}';
   }
 }

@@ -1,20 +1,18 @@
 package net.advancedplugins.seasons.api.test;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
+import java.time.Month;
+import java.time.MonthDay;
+import java.util.Map;
 import net.advancedplugins.seasons.api.calendar.configuration.CalendarConfiguration;
 import net.advancedplugins.seasons.api.calendar.configuration.GregorianCalendarConfiguration;
 import net.advancedplugins.seasons.api.calendar.day.DayLengthData;
 import net.advancedplugins.seasons.api.calendar.year.YearExpects;
 import net.advancedplugins.seasons.api.season.SeasonType;
-import net.advancedplugins.seasons.api.util.YearTick;
 import org.junit.jupiter.api.Test;
-
-import java.time.Month;
-import java.time.MonthDay;
-import java.util.Map;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 public class GregorianYearExpectsTest {
 

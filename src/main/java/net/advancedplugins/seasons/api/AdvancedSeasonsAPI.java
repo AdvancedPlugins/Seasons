@@ -8,7 +8,8 @@ public class AdvancedSeasonsAPI {
 
   /**
    * @param world
-   * @return The season of the specified world, does not include transition in the name, so it only would look like e.g. WINTER
+   * @return The season of the specified world, does not include transition in the name, so it only
+   *     would look like e.g. WINTER
    */
   public String getSeason(World world) {
     throw new UnsupportedOperationException("Unimplemented");
@@ -16,8 +17,9 @@ public class AdvancedSeasonsAPI {
 
   /**
    * @param world
-   * @return The season of the specified world, includes transition in the name e.g. WINTER_TRANSITION_3,
-   * there are 3 transitions and main season, e.g.  WINTER, WINTER_TRANSITION_1...3
+   * @return The season of the specified world, includes transition in the name e.g.
+   *     WINTER_TRANSITION_3, there are 3 transitions and main season, e.g. WINTER,
+   *     WINTER_TRANSITION_1...3
    */
   public String getSeasonWithTransitions(World world) {
     throw new UnsupportedOperationException("Unimplemented");

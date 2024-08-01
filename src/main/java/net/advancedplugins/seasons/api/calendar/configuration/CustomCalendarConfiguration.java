@@ -15,7 +15,13 @@ public final class CustomCalendarConfiguration extends CalendarConfiguration {
   private final @NotNull ImmutableList<SeasonType> seasonSequence;
   private final int seasonDurationInDays;
 
-  public CustomCalendarConfiguration(@NotNull String name, int dayLength, @NotNull List<SeasonType> seasonSequence, @NotNull Map<SeasonType, DayLengthData> dayDurationBySeason, int transitionDurationInDays, int seasonDurationInDays) {
+  public CustomCalendarConfiguration(
+      @NotNull String name,
+      int dayLength,
+      @NotNull List<SeasonType> seasonSequence,
+      @NotNull Map<SeasonType, DayLengthData> dayDurationBySeason,
+      int transitionDurationInDays,
+      int seasonDurationInDays) {
     super(name, dayLength, dayDurationBySeason, transitionDurationInDays);
     this.seasonSequence = ImmutableList.copyOf(seasonSequence);
     this.seasonDurationInDays = seasonDurationInDays;

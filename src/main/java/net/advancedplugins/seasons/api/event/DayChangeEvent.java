@@ -12,7 +12,8 @@ public class DayChangeEvent extends AbstractCalendarEvent implements DateChangeE
   private final int from;
   private final int to;
 
-  public DayChangeEvent(@NotNull WorldCalendar worldCalendar, @NotNull DateChangeCause cause, int from, int to) {
+  public DayChangeEvent(
+      @NotNull WorldCalendar worldCalendar, @NotNull DateChangeCause cause, int from, int to) {
     super(worldCalendar);
     this.cause = cause;
     this.from = from;
@@ -21,6 +22,10 @@ public class DayChangeEvent extends AbstractCalendarEvent implements DateChangeE
     if (from < 0 || to < 0) {
       throw new IllegalArgumentException("Negative values");
     }
+  }
+
+  public static HandlerList getHandlerList() {
+    return HANDLER_LIST;
   }
 
   public int from() {
@@ -38,10 +43,6 @@ public class DayChangeEvent extends AbstractCalendarEvent implements DateChangeE
 
   @Override
   public @NotNull HandlerList getHandlers() {
-    return HANDLER_LIST;
-  }
-
-  public static HandlerList getHandlerList() {
     return HANDLER_LIST;
   }
 }

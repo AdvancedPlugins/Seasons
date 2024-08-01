@@ -10,5 +10,4 @@ import org.jetbrains.annotations.NotNull;
 public interface TemperatureModifier<T> {
 
   int calculateAdditionalTemperature(@NotNull T receptor, int actual);
-
 }

@@ -1,12 +1,11 @@
 package net.advancedplugins.seasons.api.calendar.year;
 
+import java.util.Optional;
 import net.advancedplugins.seasons.api.season.SeasonSnapshot;
 import net.advancedplugins.seasons.api.season.SeasonType;
 import net.advancedplugins.seasons.api.util.YearTick;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-
-import java.util.Optional;
 
 public interface SeasonExpects {
 

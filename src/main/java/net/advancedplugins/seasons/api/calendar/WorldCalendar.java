@@ -13,6 +13,10 @@ import java.util.Optional;
 @NotCache
 public interface WorldCalendar {
 
+  static @NotNull Optional<WorldCalendar> of(@NotNull World world) {
+    return WorldHandler.instance().findCached(world).map(WorldHook::calendar);
+  }
+
   @NotNull
   World world();
 
@@ -35,16 +39,10 @@ public interface WorldCalendar {
   void setYearDayIndex(int yearDayIndex) throws IllegalArgumentException;
 
   /**
-   * This method skips calendar loops until
-   * reach (or exceed) the world time goal.
+   * This method skips calendar loops until reach (or exceed) the world time goal.
    *
    * @param goal The goal to reach.
    * @throws IllegalArgumentException If goal is less than 1L or major than 24000L
    */
   void tryReachWorldTime(long goal) throws IllegalArgumentException;
-
-  static @NotNull Optional<WorldCalendar> of(@NotNull World world) {
-    return WorldHandler.instance().findCached(world)
-        .map(WorldHook::calendar);
-  }
 }

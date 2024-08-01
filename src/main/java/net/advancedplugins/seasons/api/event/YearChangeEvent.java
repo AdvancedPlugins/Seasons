@@ -12,7 +12,8 @@ public class YearChangeEvent extends AbstractCalendarEvent implements DateChange
   private final int from;
   private final int to;
 
-  public YearChangeEvent(@NotNull WorldCalendar worldCalendar, @NotNull DateChangeCause cause, int from, int to) {
+  public YearChangeEvent(
+      @NotNull WorldCalendar worldCalendar, @NotNull DateChangeCause cause, int from, int to) {
     super(worldCalendar);
     this.cause = cause;
     this.from = from;
@@ -21,6 +22,10 @@ public class YearChangeEvent extends AbstractCalendarEvent implements DateChange
     if (from < 0 || to < 0) {
       throw new IllegalArgumentException("Negative values");
     }
+  }
+
+  public static HandlerList getHandlerList() {
+    return HANDLER_LIST;
   }
 
   @Override
@@ -38,10 +43,6 @@ public class YearChangeEvent extends AbstractCalendarEvent implements DateChange
 
   @Override
   public @NotNull HandlerList getHandlers() {
-    return HANDLER_LIST;
-  }
-
-  public static HandlerList getHandlerList() {
     return HANDLER_LIST;
   }
 }

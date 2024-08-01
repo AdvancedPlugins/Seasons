@@ -9,11 +9,18 @@ import java.util.Optional;
 
 public interface WorldHandler {
 
-  @NotNull WorldHook hookInto(@NotNull World world, boolean skipLoad);
+  static @NotNull WorldHandler instance() {
+    return AdvancedSeasonsAssembly.worldHandler();
+  }
 
-  @NotNull Optional<WorldHook> loadFromWorld(@NotNull World world);
+  @NotNull
+  WorldHook hookInto(@NotNull World world, boolean skipLoad);
 
-  @NotNull Optional<WorldHook> findCached(@NotNull World world);
+  @NotNull
+  Optional<WorldHook> loadFromWorld(@NotNull World world);
+
+  @NotNull
+  Optional<WorldHook> findCached(@NotNull World world);
 
   @NotNull
   ImmutableMap<World, WorldHook> allCached();
@@ -21,8 +28,4 @@ public interface WorldHandler {
   boolean removeHook(@NotNull World world);
 
   boolean hasHook(@NotNull World world);
-
-  static @NotNull WorldHandler instance() {
-    return AdvancedSeasonsAssembly.worldHandler();
-  }
 }

@@ -1,14 +1,13 @@
 package net.advancedplugins.seasons.api.calendar;
 
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+import java.time.Month;
 import net.advancedplugins.seasons.api.calendar.configuration.CalendarConfiguration;
 import net.advancedplugins.seasons.api.calendar.day.DayLengthData;
 import net.advancedplugins.seasons.api.calendar.year.YearExpects;
 import net.advancedplugins.seasons.api.season.SeasonSnapshot;
 import org.jetbrains.annotations.NotNull;
-
-import java.time.DayOfWeek;
-import java.time.LocalDate;
-import java.time.Month;
 
 public record CalendarSnapshot(
     int yearTickCount,

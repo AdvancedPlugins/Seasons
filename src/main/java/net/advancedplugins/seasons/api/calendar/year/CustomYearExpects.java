@@ -26,8 +26,7 @@ public class CustomYearExpects extends AbstractYearExpects<CustomCalendarConfigu
 
   @Override
   protected CircularIntRange calculateSeasonRange(int start, int end) {
-    return newTickRange(start, end, true)
-        .reduceEnd(configuration.fullTransitionLength(true));
+    return newTickRange(start, end, true).reduceEnd(configuration.fullTransitionLength(true));
   }
 
   @Override

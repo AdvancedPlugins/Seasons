@@ -1,16 +1,19 @@
 package net.advancedplugins.seasons.api.biome;
 
+import java.util.List;
+import java.util.Optional;
 import net.advancedplugins.seasons.api.AdvancedSeasonsAssembly;
 import net.advancedplugins.seasons.api.annotation.NotCache;
 import org.bukkit.Location;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.UnmodifiableView;
 
-import java.util.List;
-import java.util.Optional;
-
 @NotCache
 public interface BiomeHandler {
+
+  static @NotNull BiomeHandler instance() {
+    return AdvancedSeasonsAssembly.biomeHandler();
+  }
 
   @NotNull
   @UnmodifiableView
@@ -24,8 +27,4 @@ public interface BiomeHandler {
 
   @NotNull
   Optional<ArtificialBiome> getBiomeAt(@NotNull Location location);
-
-  static @NotNull BiomeHandler instance() {
-    return AdvancedSeasonsAssembly.biomeHandler();
-  }
 }

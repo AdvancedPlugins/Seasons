@@ -18,7 +18,11 @@ public abstract class CalendarConfiguration implements Serializable {
   private final @UnmodifiableView Map<SeasonType, DayLengthData> dayDurationBySeason;
   private final int transitionDurationInDays;
 
-  CalendarConfiguration(@NotNull String name, int dayLength, @NotNull Map<SeasonType, DayLengthData> dayDurationBySeason, int transitionDurationInDays) {
+  CalendarConfiguration(
+      @NotNull String name,
+      int dayLength,
+      @NotNull Map<SeasonType, DayLengthData> dayDurationBySeason,
+      int transitionDurationInDays) {
     this.name = name;
     this.dayLength = dayLength;
     this.dayDurationBySeason = Collections.unmodifiableMap(dayDurationBySeason);
@@ -26,7 +30,8 @@ public abstract class CalendarConfiguration implements Serializable {
     // TODO validate that a year has minimum 12 days.
     // TODO validate dayDurationInTicks with the total duration of the seasons' days
     // TODO check no repeated seasons on seasonSequence
-    // TODO check that all season types are in seasonSequence (or maybe not, idk if evict this check to let the user remove not wanted seasons)
+    // TODO check that all season types are in seasonSequence (or maybe not, idk if evict this check
+    // to let the user remove not wanted seasons)
   }
 
   public @NotNull String name() {
@@ -66,9 +71,8 @@ public abstract class CalendarConfiguration implements Serializable {
   }
 
   public abstract @NotNull ImmutableList<SeasonType> seasonSequence();
-  
+
   public abstract @NotNull CalendarType type();
 
   public abstract @NotNull YearExpects newYearExpects(int year);
-
 }

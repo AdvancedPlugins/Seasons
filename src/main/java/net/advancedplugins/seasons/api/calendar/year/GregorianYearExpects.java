@@ -1,15 +1,14 @@
 package net.advancedplugins.seasons.api.calendar.year;
 
-import net.advancedplugins.seasons.api.calendar.configuration.GregorianCalendarConfiguration;
-import net.advancedplugins.seasons.api.season.SeasonType;
-import net.advancedplugins.seasons.api.util.CircularIntRange;
-import org.jetbrains.annotations.NotNull;
-
 import java.time.LocalDate;
 import java.time.MonthDay;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.stream.Collectors;
+import net.advancedplugins.seasons.api.calendar.configuration.GregorianCalendarConfiguration;
+import net.advancedplugins.seasons.api.season.SeasonType;
+import net.advancedplugins.seasons.api.util.CircularIntRange;
+import org.jetbrains.annotations.NotNull;
 
 public class GregorianYearExpects extends AbstractYearExpects<GregorianCalendarConfiguration> {
 
