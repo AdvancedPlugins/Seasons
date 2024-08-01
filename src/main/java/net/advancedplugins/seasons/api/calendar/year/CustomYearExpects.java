@@ -7,8 +7,7 @@ import net.advancedplugins.seasons.api.util.CircularIntRange;
 import org.jetbrains.annotations.NotNull;
 
 import java.time.Month;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.function.BiConsumer;
 
 public class CustomYearExpects extends AbstractYearExpects<CustomCalendarConfiguration> {
@@ -48,20 +47,30 @@ public class CustomYearExpects extends AbstractYearExpects<CustomCalendarConfigu
   }
 
   private void calculateMonthRanges(BiConsumer<Month, CircularIntRange> consumer) {
-    for (Month value : Month.values()) {
-      int monthStart = configuration.monthStarts().get(value);
+    ListIterator<Map.Entry<Month, Integer>> iterator =
+        new ArrayList<>(configuration.monthStarts().entrySet()).listIterator();
 
-      int nextMonthNumber = value.getValue() + 1;
-
-      if (nextMonthNumber > 12) {
-        nextMonthNumber = 1;
+    Map.Entry<Month, Integer> first = null;
+    while (iterator.hasNext()) {
+      Map.Entry<Month, Integer> current = iterator.next();
+      if (first == null) {
+        first = current;
       }
 
-      Month nextMonth = Month.of(nextMonthNumber);
+      Map.Entry<Month, Integer> next;
 
-      int nextMonthStart = configuration.monthStarts().get(nextMonth);
+      if (iterator.hasNext()) {
+        next = iterator.next();
+        iterator.previous();
+      } else {
+        next = first;
+      }
 
-      consumer.accept(value, new CircularIntRange(monthStart, nextMonthStart, 0, maxDays()));
+
+      int monthStart = current.getValue();
+      int nextMonthStart = next.getValue();
+
+      consumer.accept(current.getKey(), new CircularIntRange(monthStart, nextMonthStart, 0, maxDays()));
     }
   }
 }
