@@ -1,18 +1,21 @@
 package net.advancedplugins.seasons.api.calendar;
 
-import java.time.DayOfWeek;
-import java.time.LocalDate;
-import java.time.Month;
 import net.advancedplugins.seasons.api.calendar.configuration.CalendarConfiguration;
 import net.advancedplugins.seasons.api.calendar.day.DayLengthData;
 import net.advancedplugins.seasons.api.calendar.year.YearExpects;
 import net.advancedplugins.seasons.api.season.SeasonSnapshot;
 import org.jetbrains.annotations.NotNull;
 
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+import java.time.Month;
+
 public record CalendarSnapshot(
     int yearTickCount,
     int yearDayIndex,
     int year,
+    @NotNull Month month,
+    @NotNull DayOfWeek dayOfWeek,
     @NotNull SeasonSnapshot currentSeason,
     @NotNull CalendarConfiguration configuration,
     @NotNull YearExpects yearExpects
@@ -27,14 +30,6 @@ public record CalendarSnapshot(
       throw new UnsupportedOperationException("Cannot create a LocalDate with CUSTOM calendars");
 
     return LocalDate.ofYearDay(year, yearDay());
-  }
-
-  public @NotNull Month month() {
-    return date().getMonth();
-  }
-
-  public @NotNull DayOfWeek dayOfWeek() {
-    return date().getDayOfWeek();
   }
 
   public @NotNull DayLengthData currentDayProportions() {
