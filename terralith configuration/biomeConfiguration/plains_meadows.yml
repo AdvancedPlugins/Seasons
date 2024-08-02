@@ -17,12 +17,12 @@ biomes:
   - MEADOW
   - GROVE
   - CHERRY_GROVE
-  - brushland
-  - highlands
-  - lush_valley
-  - moonlight_valley
-  - valley_clearing
-  - wintry_lowlands
+  - terralith:brushland
+  - terralith:highlands
+  - terralith:lush_valley
+  - terralith:moonlight_valley
+  - terralith:valley_clearing
+  - terralith:wintry_lowlands
 
 temperature: 0.0
 

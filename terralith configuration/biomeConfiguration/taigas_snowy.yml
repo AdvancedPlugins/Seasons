@@ -23,20 +23,20 @@ biomes:
   - FROZEN_RIVER
   - JAGGED_PEAKS
   - STONY_PEAKS
-  - alpine_highlands
-  - amethyst_canyon
-  - basalt_cliffs
-  - frozen_cliffs
-  - glacial_chasm
-  - granite_cliffs
-  - ice_marsh
-  - rocky_mountains
-  - siberian_grove
-  - siberian_taiga
-  - snowy_cherry_grove
-  - snowy_maple_forest
-  - snowy_shield
-  - white_cliffs
+  - terralith:alpine_highlands
+  - terralith:amethyst_canyon
+  - terralith:basalt_cliffs
+  - terralith:frozen_cliffs
+  - terralith:glacial_chasm
+  - terralith:granite_cliffs
+  - terralith:ice_marsh
+  - terralith:rocky_mountains
+  - terralith:siberian_grove
+  - terralith:siberian_taiga
+  - terralith:snowy_cherry_grove
+  - terralith:snowy_maple_forest
+  - terralith:snowy_shield
+  - terralith:white_cliffs
 temperature: -10
 
 seasons:

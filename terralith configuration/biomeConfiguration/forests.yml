@@ -18,18 +18,18 @@ biomes:
   - FLOWER_FOREST
   - OLD_GROWTH_BIRCH_FOREST
   - WINDSWEPT_FOREST
-  - alpine_grove
-  - birch_taiga
-  - blooming_plateau
-  - blooming_valley
-  - cloud_forest
-  - forested_highlands
-  - lavender_forest
-  - lavender_valley
-  - moonlight_grove
-  - sakura_grove
-  - sakura_valley
-  - wintry_forest
+  - terralith:alpine_grove
+  - terralith:birch_taiga
+  - terralith:blooming_plateau
+  - terralith:blooming_valley
+  - terralith:cloud_forest
+  - terralith:forested_highlands
+  - terralith:lavender_forest
+  - terralith:lavender_valley
+  - terralith:moonlight_grove
+  - terralith:sakura_grove
+  - terralith:sakura_valley
+  - terralith:wintry_forest
 
 # Relative temperature difference compared to base temperature in config.yml
 temperature: -2

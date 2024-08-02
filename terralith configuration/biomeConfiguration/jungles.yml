@@ -14,11 +14,11 @@ biomes:
   - BAMBOO_JUNGLE
   - JUNGLE
   - SPARSE_JUNGLE
-  - amethyst_rainforest
-  - cave/underground_jungle
-  - jungle_mountains
-  - rocky_jungle
-  - tropical_jungle
+  - terralith:amethyst_rainforest
+  - terralith:cave/underground_jungle
+  - terralith:jungle_mountains
+  - terralith:rocky_jungle
+  - terralith:tropical_jungle
 
 # Relative temperature difference compared to base temperature in config.yml
 temperature: 3.0
