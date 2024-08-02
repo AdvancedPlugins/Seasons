@@ -2,11 +2,13 @@ package net.advancedplugins.seasons.api.world;
 
 import com.google.common.collect.ImmutableMap;
 import net.advancedplugins.seasons.api.AdvancedSeasonsAssembly;
+import net.advancedplugins.seasons.api.annotation.NotCache;
 import org.bukkit.World;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Optional;
 
+@NotCache
 public interface WorldHandler {
 
   static @NotNull WorldHandler instance() {
