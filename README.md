@@ -13,4 +13,14 @@ Experience dynamic seasons in Minecraft with Advanced Seasons, the most immersiv
       softdepend: ["AdvancedSeasons"]
    ```
 5. Enjoy the best dynamic seasons experience!.
-   
+
+## Status
+
+Version: 0.1.0-alpha
+ 
+| Handlers      |   Implemented                 |
+| ------------- |:-----------------------------:|
+| CalendarConfigurationHandler  | ✅            |
+| WorldHandler      | ✅                        |
+| BiomeHandler | ❌                             |
+| TemperatureHandler | ❌                       |
