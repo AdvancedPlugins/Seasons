@@ -14,7 +14,7 @@
 biomes:
   - RIVER
   - STONY_SHORE
-  - warm_river
+  - terralith:warm_river
 
 temperature: 0.0
 

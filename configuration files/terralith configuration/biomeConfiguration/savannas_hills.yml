@@ -17,17 +17,17 @@ biomes:
   - WINDSWEPT_HILLS
   - WINDSWEPT_GRAVELLY_HILLS
   - WINDSWEPT_SAVANNA
-  - ashen_savanna
-  - fractured_savanna
-  - hot_shrubland
-  - mountain_steppe
-  - painted_mountains
-  - savanna_slopes
-  - savanna_badlands
-  - shield
-  - shield_clearing
-  - shrubland
-  - steppe
+  - terralith:ashen_savanna
+  - terralith:fractured_savanna
+  - terralith:hot_shrubland
+  - terralith:mountain_steppe
+  - terralith:painted_mountains
+  - terralith:savanna_slopes
+  - terralith:savanna_badlands
+  - terralith:shield
+  - terralith:shield_clearing
+  - terralith:shrubland
+  - terralith:steppe
 temperature: 10
 
 seasons:

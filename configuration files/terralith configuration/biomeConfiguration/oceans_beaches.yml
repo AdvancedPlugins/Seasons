@@ -23,8 +23,8 @@ biomes:
   - OCEAN
   - SNOWY_BEACH
   - WARM_OCEAN
-  - gravel_beach
-  - mirage_isles
+  - terralith:gravel_beach
+  - terralith:mirage_isles
   
 # Relative temperature difference compared to base temperature in config.yml
 temperature: 0.5
