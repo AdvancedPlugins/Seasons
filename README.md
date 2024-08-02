@@ -24,3 +24,8 @@ Version: 0.1.0-alpha
 | WorldHandler      | ✅                        |
 | BiomeHandler | ❌                             |
 | TemperatureHandler | ❌                       |
+
+## Contributing
+Everyone can contribute to AS. As long as:
+* Don't PR to the main branch.
+* Use [google-java-format codestyle](https://github.com/google/google-java-format)
