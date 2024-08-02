@@ -1,0 +1,63 @@
+# You can choose CUSTOM or GREGORIAN calendar type.
+# GREGORIAN calendar type forces you to have 365 days but allows you to specify a season start
+# at a specified date in a 365-day calendar.
+# CUSTOM calendar type determines the year days based on the sum of the seasonDays and its transitionDays (full season days * 4).
+type: CUSTOM
+
+# This doesn't have an effect with GREGORIAN calendars.
+season-order: [SPRING, SUMMER, FALL, WINTER]
+
+# This doesn't have an effect with GREGORIAN calendars.
+month-starts:
+  january: 1
+  february: 2
+  march: 3
+  april: 4
+  may: 5
+  june: 6
+  july: 7
+  august: 8
+  september: 9
+  october: 10
+  november: 11
+  december: 12
+
+# Now you can configure day lengths > 20 minutes!
+time:
+  dayLength: 20
+  # In Vanilla: entire day in normal minecraft is 20 minutes
+  spring:
+    # Length of day time, in real world minutes
+    dayLength: 10
+    nightLength: 10
+  summer:
+    dayLength: 15
+    nightLength: 5
+  fall:
+    dayLength: 10
+    nightLength: 10
+  winter:
+    dayLength: 7
+    nightLength: 13
+
+# Seasons Progression
+progression:
+  # Should season progression be paused? Set to true to pause
+  paused: false
+
+# Maximum combined length of seasonDays and transitionDays cannot be less than 3!
+calendar:
+  # This value only works for CUSTOM calendar types
+  # How many days should one season last
+  seasonDays: 2
+  # How many days should it take to phase between seasons?
+  transitionDays: 1
+
+# This only works with GREGORIAN calendars.
+# You must introduce the date when the seasons start in the following format: dd-MM
+# Default values are based on the north hemisphere.
+season-start-dates:
+  spring: 20-03 # March 20th
+  summer: 20-06 # June 20th
+  fall: 22-09 # September 22nd
+  winter: 21-12 # December 21st
