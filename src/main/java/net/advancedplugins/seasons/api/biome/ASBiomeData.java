@@ -13,5 +13,5 @@ public record ASBiomeData(
     int temperature,
     @NotNull @UnmodifiableView Map<String, SeasonData> seasonDataMap
 ) {
-  public record SeasonData(boolean snowy, Map<BiomeVisualKey, String> visualValues) {}
+  public record SeasonData(boolean snowy, @UnmodifiableView Map<BiomeVisualKey, String> visualValues) {}
 }

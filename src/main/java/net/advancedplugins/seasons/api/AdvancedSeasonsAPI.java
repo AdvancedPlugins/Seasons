@@ -17,6 +17,9 @@ public class AdvancedSeasonsAPI {
         throw new UnsupportedOperationException("Unimplemented");
     }
 
+    /**
+     * @return The biome data used at the given location.
+     */
     public Optional<ASBiomeData> biomeAt(Location location) {
         throw new UnsupportedOperationException("Unimplemented");
     }
