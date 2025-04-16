@@ -23,6 +23,9 @@ biomes:
   - OCEAN
   - SNOWY_BEACH
   - WARM_OCEAN
+  - terralith:alpha_islands
+  - terralith:alpha_islands_winter
+  - terralith:deep_warm_ocean
   - terralith:gravel_beach
   - terralith:mirage_isles
   

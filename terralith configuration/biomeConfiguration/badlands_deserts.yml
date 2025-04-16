@@ -16,19 +16,21 @@ biomes:
   - ERODED_BADLANDS
   - DESERT
   - WOODED_BADLANDS
-  - terralith:arid_highlands
   - terralith:ancient_sands
   - terralith:arid_highlands
+  - terralith:bryce_canyon
   - terralith:desert_canyon
   - terralith:desert_oasis
   - terralith:desert_spires
   - terralith:gravel_desert
   - terralith:lush_desert
   - terralith:red_oasis
+  - terralith:sandstone_valley
   - terralith:savanna_badlands
   - terralith:warped_mesa
   - terralith:white_mesa
-
+  - terralith:amethyst_canyon
+  -
 # Relative temperature difference compared to base temperature in config.yml
 temperature: 15
 

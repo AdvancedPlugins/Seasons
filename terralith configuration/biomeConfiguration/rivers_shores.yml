@@ -15,6 +15,7 @@ biomes:
   - RIVER
   - STONY_SHORE
   - terralith:warm_river
+  - terralith:yosemite_cliffs
 
 temperature: 0.0
 

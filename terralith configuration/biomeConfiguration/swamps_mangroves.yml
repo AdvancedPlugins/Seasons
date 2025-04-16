@@ -15,6 +15,7 @@ biomes:
   - SWAMP
   - MANGROVE_SWAMP
   - terralith:orchid_swamp
+  - terralith:ice_marsh
 
 temperature: -0.5
 seasons:
