@@ -24,19 +24,22 @@ biomes:
   - JAGGED_PEAKS
   - STONY_PEAKS
   - terralith:alpine_highlands
-  - terralith:amethyst_canyon
   - terralith:basalt_cliffs
   - terralith:frozen_cliffs
   - terralith:glacial_chasm
   - terralith:granite_cliffs
-  - terralith:ice_marsh
   - terralith:rocky_mountains
   - terralith:siberian_grove
   - terralith:siberian_taiga
   - terralith:snowy_cherry_grove
-  - terralith:snowy_maple_forest
   - terralith:snowy_shield
   - terralith:white_cliffs
+  - terralith:cold_shrubland
+  - terralith:emerald_peaks
+  - terralith:snowy_badlands
+  - terralith:wintry_lowlands
+  - terralith:yellowstone
+
 temperature: -10
 
 seasons:

@@ -20,14 +20,24 @@ biomes:
   - terralith:ashen_savanna
   - terralith:fractured_savanna
   - terralith:hot_shrubland
-  - terralith:mountain_steppe
+  - terralith:steppe
   - terralith:painted_mountains
   - terralith:savanna_slopes
-  - terralith:savanna_badlands
   - terralith:shield
   - terralith:shield_clearing
   - terralith:shrubland
-  - terralith:steppe
+  - terralith:caldera
+  - terralith:haze_mountain
+  - terralith:rocky_shrubland
+  - terralith:scarlet_mountains
+  - terralith:skylands_autumn
+  - terralith:skylands_spring
+  - terralith:skylands_summer
+  - terralith:skylands_winter
+  - terralith:stony_spires
+  - terralith:volcanic_peaks
+  - terralith:yosemite_lowlands
+  -
 temperature: 10
 
 seasons:

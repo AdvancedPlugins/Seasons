@@ -26,9 +26,13 @@ biomes:
   - terralith:forested_highlands
   - terralith:lavender_forest
   - terralith:lavender_valley
+  - terralith:lush_valley
   - terralith:moonlight_grove
+  - terralith:moonlight_valley
   - terralith:sakura_grove
   - terralith:sakura_valley
+  - terralith:siberian_grove
+  - terralith:snowy_maple_forest
   - terralith:wintry_forest
 
 # Relative temperature difference compared to base temperature in config.yml
